@@ -1,0 +1,34 @@
+Starting test sequence...
+Test#1
+Memory Monitor Test Results:
+- Memory block 1: OK
+- Memory block 2: OK
+- Memory block 3: OK
+Total memory blocks tested: 3
+Memory test completed successfully
+Test end
+
+Test#2
+Runtime Test Results:
+- CPU frequency: 160MHz
+- Temperature: 45°C
+- Power consumption: 120mA
+Runtime test completed successfully
+Test end
+
+Test#1
+Memory Monitor Test Results:
+- Memory block 1: OK
+- Memory block 2: ERROR
+- Memory block 3: OK
+Total memory blocks tested: 3
+Memory test completed with errors
+Test end
+
+Test#2
+Runtime Test Results:
+- CPU frequency: 160MHz
+- Temperature: 48°C
+- Power consumption: 125mA
+Runtime test completed successfully
+Test end 

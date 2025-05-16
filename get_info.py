@@ -1,4 +1,7 @@
 import re
+import os
+import sqlite3
+
 
 file_path = "putty.log"
 codes  = {
@@ -9,9 +12,23 @@ codes  = {
 
 
 class TestMod:
-    def __init__(self, code):
+    def __init__(self, code, name):
         self.code = code
+        self.name = name
         self.result = []
+
+testObjects = []
+
+def print_tests():
+    print("\n=== Test Analysis Results ===")
+    for i, test in enumerate(testObjects, 1):
+        print(f"\nTest #{i}")
+        print(f"Code: {test.code}")
+        print(f"Type: {test.name}")
+        print("Results:")
+        for line in test.result:
+            print(f"  {line}")
+        print("-" * 40)
 
 def getInfo(fileName):
     try:
@@ -66,4 +83,7 @@ def getInfo(fileName):
     except Exception as e:
         print(f"Error: {e}")
 
+
+getInfo(file_path)
+print_tests()
 
