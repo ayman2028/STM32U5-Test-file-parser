@@ -2,12 +2,10 @@ import re
 import os
 import sqlite3
 
-
 file_path = "putty.log"
 codes  = {
     1 : "Memory Monitor Test",
     2 : "Runtime Test"
-
 }
 
 
@@ -83,7 +81,7 @@ def getInfo(fileName):
     except Exception as e:
         print(f"Error: {e}")
 
-
+# Remove the automatic execution
+# 
 getInfo(file_path)
-print_tests()
-
+# print_tests()
